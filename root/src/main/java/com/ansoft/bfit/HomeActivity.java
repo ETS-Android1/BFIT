@@ -30,7 +30,7 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
-    AppBarConfiguration mAppBarConfiguration;
+    private AppBarConfiguration mAppBarConfiguration;
     AppCompatImageView icMenu;
     TextView tvTitle;
     DrawerLayout drawer;

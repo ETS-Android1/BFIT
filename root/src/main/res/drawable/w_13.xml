@@ -4,6 +4,9 @@
     <item android:drawable="@drawable/a13_00"
         android:duration="600"/>
 
+
+
+
     <item android:drawable="@drawable/a13_01"
         android:duration="600"/>
 
