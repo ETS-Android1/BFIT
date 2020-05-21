@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="12dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="12dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/prevBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_left"
+                android:tint="@color/black"
+
+                />
+
+            <ImageView
+                android:id="@+id/nextBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right"
+                android:tint="@color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/calDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/nextBtn"
+                android:layout_toRightOf="@+id/prevBtn"
+                android:fontFamily="@font/futura_book"
+                android:gravity="center"
+                android:text="September 2019"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/cal_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/futura_heavy"
+                android:gravity="center_horizontal"
+                android:text="S"
+                android:textColor="@color/red" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/futura_heavy"
+                android:gravity="center_horizontal"
+                android:text="M"
+                android:textColor="@color/halfBlack" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/futura_heavy"
+                android:gravity="center_horizontal"
+                android:text="T"
+                android:textColor="@color/halfBlack" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/futura_heavy"
+                android:gravity="center_horizontal"
+                android:text="W"
+                android:textColor="@color/halfBlack" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/futura_heavy"
+                android:gravity="center_horizontal"
+                android:text="T"
+                android:textColor="@color/halfBlack" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/futura_heavy"
+                android:gravity="center_horizontal"
+                android:text="F"
+                android:textColor="@color/halfBlack" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/futura_heavy"
+                android:gravity="center_horizontal"
+                android:text="S"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout">
+
+        <GridView
+            android:id="@+id/calendar_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:numColumns="7"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

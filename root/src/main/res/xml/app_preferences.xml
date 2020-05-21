@@ -1,0 +1,71 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Title">
+
+
+    <PreferenceCategory
+        android:title="General"
+        >
+
+
+        <SwitchPreference
+            android:key="sound"
+            android:title="Sound"
+            android:icon="@drawable/ic_menu_volume"
+            android:summary="Overall sound in the app" />
+
+
+        <SwitchPreference
+            android:key="voice_over"
+            android:title="Voice Guide"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_menu_voice"
+            android:summary="Google text to speech voice guide" />
+
+
+
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:title="User Info"
+
+        >
+
+
+        <EditTextPreference
+            android:key="user_name"
+            android:title="Full Name"
+            android:icon="@drawable/ic_menu_person"
+            android:summary="Your full name" />
+
+
+        <SeekBarPreference
+            android:key="height"
+            android:title="Height"
+            android:summary="Your height in cm"
+            android:icon="@drawable/ic_menu_height"
+            android:min="100"
+            android:max="300"
+            />
+
+
+
+
+        <SeekBarPreference
+            android:key="weight"
+            android:title="Weight"
+            android:summary="Your weight in kg"
+            android:icon="@drawable/ic_menu_weight"
+            android:min="30"
+            android:max="200"
+            />
+
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

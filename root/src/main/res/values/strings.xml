@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">Butt Workout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lvl_easy">Easy</string>
+    <string name="lvl_medium">Medium</string>
+    <string name="lvl_hard">Hard</string>
+    <string name="level">level</string>
+    <string name="pref_gender">pref_gender</string>
+    <string name="pref_frequency">pref_frequency</string>
+    <string name="pref_activity">pref_activity</string>
+    <string name="pref_pushup">pref_pushup</string>
+    <string name="pref_reminder">pref_reminder</string>
+    <string name="pref_data_taken">pref_data_taken</string>
+    <string name="default_gender">Male</string>
+    <string name="default_frequency">Hardly</string>
+    <string name="default_activity">Shortness of breath</string>
+    <string name="default_pushup">Less than 10</string>
+    <string name="default_reminder_time">00:00</string>
+    <string name="day">day</string>
+    <string name="index">index</string>
+
+
+    <string name="w_01">
+First, begin in a standing position with a wide stance.  The biggest mistake most people make with this stretch is not getting their feet wide enough. The key is to start with almost all of the slack out of the adductors. This way only a very small movement is needed to generate a stretch.
+\n\n
+The other major error with this stretch is that as the adductors pull tight they often pull the pelvis out of position. To prevent this it is often helpful to hold a posterior pelvic tilt and abdominal brace during the stretch.
+\n\n
+Once the right starting posture is met, bend one knee and slide the hips to one side. This should create a stretch on the inside of the opposite thigh. Hold the stretch for 1-2 seconds then return to the starting position to release the stretch (you can also increase the hold time if needed).</string>
+
+
+    <string name="w_02">
+
+Lie on your back, arms down by your sides. Bend your knees and plant your feet flat on the floor.\n
+Pull in through your navel to brace your core muscles and then squeeze your glutes to press your hips up so your body forms a straight line — no arching — from knees to shoulders.
+\nKeep your head on the floor and eyes focused on the ceiling.
+\nHold the position for a beat, and then lift and lower and repeat.
+    </string>
+
+    <string name="w_03">Stand with your feet hip-width apart, and your hands on your hips.\n\n
+Keeping your back flat and your core engaged, step your left foot behind and outside your right foot, lowering your hips until your right thigh is parallel with the floor. Your left knee should hover an inch or two above the floor.
+\n\nReverse the movement to return to the starting position. Continue for reps, then switch sides and repeat.</string>
+
+    <string name="w_04">
+
+        Assume the starting position on all fours: knees hip-width apart, hands under your shoulders, neck and spine neutral.
+\n\nBracing your core, begin to lift your right leg, knee staying bent, foot staying flat, and hinging at the hip.
+\n\nUse your glute to press your foot directly toward the ceiling and squeeze at the top. Ensure your pelvis and working hip stay pointed toward the ground.
+\n\nReturn to the starting position.
+
+
+    </string>
+
+
+    <string name="w_05">
+
+
+        Assume the starting position on all fours: knees hip-width apart, hands under your shoulders, neck and spine neutral.
+\n\nBracing your core, begin to lift your right leg, knee staying bent, foot staying flat, and hinging at the hip.
+\n\nUse your glute to press your foot directly toward the ceiling and squeeze at the top. Ensure your pelvis and working hip stay pointed toward the ground.
+\n\nReturn to the starting position.
+
+
+    </string>
+
+    <string name="w_06">
+
+        Start on your hands and knees. Place your shoulders above your hands and your hips above your knees. Tighten your core and look down.
+\n\nLift your left leg away from your body at a 45-degree angle. Keep your knee at 90 degrees.
+\n\nLower your leg to starting position to complete 1 rep.
+\n\nDo 3 sets of 10 reps. Repeat with the other leg.
+
+    </string>
+    <string name="w_07">
+
+        Start on your hands and knees. Place your shoulders above your hands and your hips above your knees. Tighten your core and look down.
+\n\nLift your left leg away from your body at a 45-degree angle. Keep your knee at 90 degrees.
+\n\nLower your leg to starting position to complete 1 rep.
+\n\nDo 3 sets of 10 reps. Repeat with the other leg.
+
+
+
+    </string>
+
+    <string name="w_08">
+
+Lie down on your back, facing up.\n\n
+Place both your hands underneath your buttocks.
+\n\nKeep your lower back on the ground as you lift the right leg off the ground slightly past hip height, and lift the left leg so it hovers a few inches off the floor.
+\n\nHold for 2 seconds, then switch the position of the legs, making a flutter kick motion.
+\n\nFor more of a challenge, lift your head and neck off the floor.
+
+    </string>
+    <string name="w_09">
+
+        Lay down with your back on the ground and your knees bent and pointed towards the ceiling.
+\n\nWith your arms on your side raise your shoulders slightly off the ground.
+\n\nUsing your abs rotate your right hand down to your right foot and then back up.
+\n\nThen do the same thing with your left hand.
+\n\nAlternate back and forth for the desired amount of repetitions.
+    </string>
+
+
+    <string name="w_10">
+Step one leg back long hip-width apart to the 90 degree front leg, back leg lunge position, lowering the hips.
+\n\nLift and drive up out of the lunge, powering the rear knee forward into a knee hop, gaining a burst of energy from the legs and core muscles.
+\n\nReturn and repeat.
+
+    </string>
+
+    <string name="w_11">
+
+Stand tall with feet hip-width apart. Engage your core.
+
+\n\nTake a big step forward with right leg. Start to shift your weight forward so heel hits the floor first.
+
+\n\nLower your body until right thigh is parallel to the floor and right shin is vertical. It’s OK if knee shifts forward a little as long as it doesn’t go past right toe. If mobility allows, lightly tap left knee to the floor while keeping weight in right heel.
+
+\n\nPress into right heel to drive back up to starting position.
+
+\n\nRepeat on the other side.
+
+    </string>
+    <string name="w_12">
+
+        Get into a plank position, making sure to distribute your weight evenly between your hands and your toes.
+\n\nCheck your form—your hands should be about shoulder-width apart, back flat, abs engaged, and head in alignment.
+\n\nPull your right knee into your chest as far as you can.
+\n\nThen switch, pulling that knee out and bringing the other knee in.
+\n\nKeeping your hips down, run your knees in and out as far and as fast as you can. Alternate inhaling and exhaling with each leg change.
+
+    </string>
+    <string name="w_13">
+
+        When standing in the normal squat position, rotate your feet so your toes point away from your body.
+        \n\nThis places your feet at roughly 30-degree angles to your body, which is the same foot position as the pliè squat. Hold one end of a dumbbell with both hands. Allow the loose end of the dumbbell to face the floor as you lower your body during the squat.
+        \n\nRemember to keep your back straight as you raise and lower your body. Start with five squats and progress by adding more reps each time you exercise.
+
+    </string>
+    <string name="w_14">
+
+
+Step one leg back long hip-width apart to the 90 degree front leg, back leg lunge position, lowering the hips.
+\n\nLift and drive up out of the lunge, powering the rear knee forward into a knee hop, gaining a burst of energy from the legs and core muscles.
+\n\nReturn and repeat.
+    </string>
+    <string name="w_15">
+
+        Start by standing tall with your feet parallel and shoulder-width apart. Your back should be straight and your weight on your heels. Take a big step to the side and, ensuring you keep your torso as upright as possible, lower until the knee of your leading leg is bent at around 90°, keeping your trailing leg straight. Push back up and return to the starting position.
+\n\n
+The most common form issue with a side lunge is to collapse over the straight knee. Focus on bending and lowering from the hips, with your back straight and core engaged, as with a squat. Also make sure you’re keeping the heels of both feet on the floor as you lower.
+\n\n
+You can do several side lunges on one leg then switch sides, or alternate legs. Shoot for 20 side lunges on each leg in total, or build them into a timed circuits routine.
+    </string>
+
+    <string name="w_16">
+
+Start in the low-plank position on your elbows. Engage the core to create a straight line from the top of your head to your heels – no sagging of bellies or butts in the air!
+\n\nKeeping it straight, lift your right foot a few inches off the ground and keeping this height, move your foot out to the side (laterally) to a distance of about 1 – 2 feet. Try to keep this movement slow and controlled.
+\n\nAt the full extension of the kick, hold for about 1 second.
+\n\nKeeping your foot hovering above the ground, return it towards your balancing foot, and touch down to the ground.
+\n\nThis is 1 rep, repeat with the other foot on the other side and ensure to train both sides equally.
+    </string>
+    <string name="w_17">
+
+
+Start in the low-plank position on your elbows. Engage the core to create a straight line from the top of your head to your heels – no sagging of bellies or butts in the air!
+\n\nKeeping it straight, lift your right foot a few inches off the ground and keeping this height, move your foot out to the side (laterally) to a distance of about 1 – 2 feet. Try to keep this movement slow and controlled.
+\n\nAt the full extension of the kick, hold for about 1 second.
+\n\nKeeping your foot hovering above the ground, return it towards your balancing foot, and touch down to the ground.
+\n\nThis is 1 rep, repeat with the other foot on the other side and ensure to train both sides equally.
+
+    </string>
+    <string name="w_18">
+
+
+        With your feet underneath your shoulders, step one foot forward as wide as you can while keeping both heels planted on the ground with toes pointed forward.
+        \n\nPlace your hands on your hips and maintain an upright torso as you bend both your knees, allowing your back heel to come off the ground as you shift your weight down into the heel of the front leg.
+        \n\nLower until your back shin and front thigh are parallel with the ground. Pause, and drive through your front heel to stand back up to the start position.
+
+    </string>
+    <string name="w_19">
+
+
+
+        With your feet underneath your shoulders, step one foot forward as wide as you can while keeping both heels planted on the ground with toes pointed forward.
+        \n\nPlace your hands on your hips and maintain an upright torso as you bend both your knees, allowing your back heel to come off the ground as you shift your weight down into the heel of the front leg.
+        \n\nLower until your back shin and front thigh are parallel with the ground. Pause, and drive through your front heel to stand back up to the start position.
+
+
+    </string>
+    <string name="w_20">
+
+        Find a foot stance that feels best for you. Pointing your toes slightly outwards helps some, but keeping them parallel is fine, too. If you’re not sure what’s best, start by putting your feet shoulder-width apart and pointed about 15 degrees outwards.
+\n\nTense your abs like someone is about to punch you.
+\n\nLook straight ahead and stand tall!
+
+    </string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="sound_on">soundOn</string>
+    <string name="voice_on">voice</string>
+    <string name="countdowntime">countdowntime</string>
+    <string name="resttime">rest_time</string>
+    <string name="birthyear">birthyear</string>
+    <string name="heightcm">heightcm</string>
+    <string name="weightkg">weightkg</string>
+    <string name="meet_experts">Meet the experts</string>
+</resources>

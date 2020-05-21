@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkPrimary"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/headerImg"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/headerImg"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/ic_close"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backIcon"
+        android:layout_margin="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futura_book"
+            android:text="CREATING\nYOUR"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futura_heavy"
+            android:text="PLAN"
+            android:textColor="@color/colorAccent"
+            android:textSize="50dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/futura_book"
+            android:text="Please wait while we create a perfect workout plan for you."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            android:layout_marginTop="60dp"
+            style="@style/SpinKitView.Wave"
+            android:layout_width="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/black" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
