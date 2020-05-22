@@ -57,36 +57,20 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
-                switch (id) {
-                    case R.id.nav_home:
-                        tvTitle.setText("Butt Workout");
-                        break;
-
-                    case R.id.nav_disover:
-                        tvTitle.setText("Discover");
-                        break;
-
-                    case R.id.nav_whatsnew:
-                        tvTitle.setText("Whats New");
-                        break;
-
-                    case R.id.nav_report:
-                        tvTitle.setText("Report");
-                        break;
-
-
-                    case R.id.nav_fitness_expert:
-                        tvTitle.setText("Meet the experts");
-                        break;
-
-                    case R.id.nav_settings:
-                        tvTitle.setText("Settings");
-                        break;
-
-                    default:
-                        tvTitle.setText("Butt Workout");
-                        break;
-
+                if (id == R.id.nav_home) {
+                    tvTitle.setText("Butt Workout");
+                } else if (id == R.id.nav_disover) {
+                    tvTitle.setText("Discover");
+                } else if (id == R.id.nav_whatsnew) {
+                    tvTitle.setText("Whats New");
+                } else if (id == R.id.nav_report) {
+                    tvTitle.setText("Report");
+                } else if (id == R.id.nav_fitness_expert) {
+                    tvTitle.setText("Meet the experts");
+                } else if (id == R.id.nav_settings) {
+                    tvTitle.setText("Settings");
+                } else {
+                    tvTitle.setText("Butt Workout");
                 }
                 NavigationUI.onNavDestinationSelected(menuItem, navController);
                 drawer.closeDrawer(Gravity.LEFT);
