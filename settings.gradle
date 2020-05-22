@@ -1,2 +1,2 @@
-include ':root'
+include ':root', ':lib'
 include ':Library'
