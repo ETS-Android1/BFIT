@@ -120,12 +120,12 @@ public class NotificationScheduler
 
         String quote=quotes[index];
 
-        Bitmap largeIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.woman);
+        Bitmap largeIcon = BitmapFactory.decodeResource(context.getResources(), R.drawable.notificationicon);
 
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "98251")
                 .setLargeIcon(largeIcon)
-                .setSmallIcon(R.drawable.weightlifting)
+                .setSmallIcon(R.drawable.notification2)
                 .setContentTitle("Its workout time")
                 .setContentText(quote)
                 .setSubText("Get your ass movin!")

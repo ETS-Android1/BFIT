@@ -67,7 +67,7 @@ public class WhatsNewFragment extends Fragment {
         loadingProgressBar.setVisibility(View.VISIBLE);
         whatsnewRecyclerView.setVisibility(View.GONE);
         whatsNewArrayList = new ArrayList<>();
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, AppConstants.WHATSNEW_APP_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, getString(R.string.whatsnew_url),
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

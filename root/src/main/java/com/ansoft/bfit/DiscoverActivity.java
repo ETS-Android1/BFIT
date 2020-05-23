@@ -100,7 +100,7 @@ public class DiscoverActivity extends AppCompatActivity {
 
 
     public void getDiscover() {
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, AppConstants.getDiscover(id),
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, getString(R.string.workout_url) + id,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

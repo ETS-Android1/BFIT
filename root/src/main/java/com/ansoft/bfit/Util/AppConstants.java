@@ -10,16 +10,10 @@ import com.android.volley.ParseError;
 import com.android.volley.ServerError;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
+import com.ansoft.bfit.R;
 
 public class AppConstants {
 
-    public static String DISCOVER_APP_URL ="https://api.bfit.remo.fun/d/workout?appcode=butt&category=discover";
-    public static String EXPERT_APP_URL ="https://api.bfit.remo.fun/d/expert";
-    public static String WHATSNEW_APP_URL ="https://api.bfit.remo.fun/d/workout?appcode=butt&category=whatsnew";
-
-    public static String getDiscover(String id){
-        return "https://api.bfit.remo.fun/d/workout/"+id;
-    }
 
     public static void showVolleyError(VolleyError error, Context context){
 

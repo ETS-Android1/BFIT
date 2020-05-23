@@ -62,7 +62,7 @@ public class DiscoverWorkoutMoreActivity extends AppCompatActivity {
         imgGIf = findViewById(R.id.imgGIf);
         icLeft = findViewById(R.id.leftIcon);
         icRight = findViewById(R.id.rightIcon);
-        loadingLayout=findViewById(R.id.loadingLayout);
+        loadingLayout = findViewById(R.id.loadingLayout);
         loadingLayout.setVisibility(View.VISIBLE);
 
 
@@ -136,7 +136,7 @@ public class DiscoverWorkoutMoreActivity extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if(animationDrawable!=null) {
+        if (animationDrawable != null) {
             animationDrawable.start();
         }
     }
@@ -144,7 +144,7 @@ public class DiscoverWorkoutMoreActivity extends AppCompatActivity {
 
     public void getDiscover() {
         workoutDayArrayList = new ArrayList<>();
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, AppConstants.getDiscover(id),
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, getString(R.string.workout_url) + id,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

@@ -6,6 +6,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.ansoft.bfit.DataModel.WorkoutDay;
 import com.ansoft.bfit.Database.WorkoutID;
@@ -31,12 +33,16 @@ public class WorkoutActivity extends AppCompatActivity {
     public AnimationDrawable animationDrawable;
 
 
+    RelativeLayout loadingLayout;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout);
+        loadingLayout=findViewById(R.id.loadingLayout);
+        loadingLayout.setVisibility(View.GONE);
 
         getData();
         scheduleFragments();

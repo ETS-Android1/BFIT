@@ -50,7 +50,7 @@ public class DiscoverWorkoutActivity extends AppCompatActivity {
 
     int fragIndex = 0;
 
-    public  long totalTime = 0;
+    public long totalTime = 0;
 
     ArrayList<Fragment> scheduledFragments;
     public AnimationDrawable animationDrawable;
@@ -71,7 +71,7 @@ public class DiscoverWorkoutActivity extends AppCompatActivity {
             finish();
         }
         getDiscover();
-        loadingLayout=findViewById(R.id.loadingLayout);
+        loadingLayout = findViewById(R.id.loadingLayout);
         loadingLayout.setVisibility(View.VISIBLE);
     }
 
@@ -96,11 +96,11 @@ public class DiscoverWorkoutActivity extends AppCompatActivity {
             } else {
                 index = 1;
             }
-            int progress=((i+1)*100)/(workoutDays.size());
+            int progress = ((i + 1) * 100) / (workoutDays.size());
             scheduledFragments.add(new WorkoutFragment(workoutDay, index, this, progress));
             if (i != workoutDays.size() - 1) {
-                int progress2=((i+1)*100)/(workoutDays.size());
-                scheduledFragments.add(new RestFragment(workoutDays.get(i+1), this, progress2));
+                int progress2 = ((i + 1) * 100) / (workoutDays.size());
+                scheduledFragments.add(new RestFragment(workoutDays.get(i + 1), this, progress2));
             }
         }
         scheduledFragments.add(new FeedbackFragment(this));
@@ -110,19 +110,18 @@ public class DiscoverWorkoutActivity extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if(animationDrawable!=null) {
+        if (animationDrawable != null) {
             animationDrawable.start();
         }
     }
 
 
     public void getDiscover() {
-        workoutDays=new ArrayList<>();
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, AppConstants.getDiscover(id),
+        workoutDays = new ArrayList<>();
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, getString(R.string.workout_url) + id,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.e("Booking Response", response.toString());
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             JSONObject eachDataJsonObject = jsonObject.getJSONObject("data");
@@ -134,7 +133,7 @@ public class DiscoverWorkoutActivity extends AppCompatActivity {
                             JSONArray workoutArray = eachDataJsonObject.getJSONArray("workouts");
                             for (int k = 0; k < workoutArray.length(); k++) {
                                 JSONObject workoutJsonObject = workoutArray.getJSONObject(k);
-                                WorkoutDay workoutDay=new WorkoutDay();
+                                WorkoutDay workoutDay = new WorkoutDay();
                                 workoutDay.setWorkoutid(workoutJsonObject.getInt("id"));
                                 workoutDay.setRep(workoutJsonObject.getInt("rep"));
                                 workoutDay.setReptype(workoutJsonObject.getInt("reptype"));
@@ -180,18 +179,18 @@ public class DiscoverWorkoutActivity extends AppCompatActivity {
         totalTime += millis;
     }
 
-    public double calculateCaloriesBurned(){
-        int totalCaloriesBurned=0;
-        for(WorkoutDay workoutDay:workoutDays){
-            totalCaloriesBurned+=(workoutDay.getRep()* WorkoutID.getWorkoutFromID(workoutDay.getWorkoutid()).getKcalBurn());
+    public double calculateCaloriesBurned() {
+        int totalCaloriesBurned = 0;
+        for (WorkoutDay workoutDay : workoutDays) {
+            totalCaloriesBurned += (workoutDay.getRep() * WorkoutID.getWorkoutFromID(workoutDay.getWorkoutid()).getKcalBurn());
         }
         return totalCaloriesBurned;
     }
 
-    public double getCalorie(){
-        int totalCaloriesBurned=0;
-        for(WorkoutDay workoutDay:workoutDays){
-            totalCaloriesBurned+=(workoutDay.getRep()* WorkoutID.getWorkoutFromID(workoutDay.getWorkoutid()).getKcalBurn());
+    public double getCalorie() {
+        int totalCaloriesBurned = 0;
+        for (WorkoutDay workoutDay : workoutDays) {
+            totalCaloriesBurned += (workoutDay.getRep() * WorkoutID.getWorkoutFromID(workoutDay.getWorkoutid()).getKcalBurn());
         }
         return totalCaloriesBurned;
     }

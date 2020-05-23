@@ -235,4 +235,8 @@ Start in the low-plank position on your elbows. Engage the core to create a stra
     <string name="heightcm">heightcm</string>
     <string name="weightkg">weightkg</string>
     <string name="meet_experts">Meet the experts</string>
+    <string name="discover_url">https://api.bfit.remo.fun/d/workout?appcode=butt&amp;category=discover</string>
+    <string name="expert_url">https://api.bfit.remo.fun/d/expert</string>
+    <string name="workout_url">https://api.bfit.remo.fun/d/workout/</string>
+    <string name="whatsnew_url">https://api.bfit.remo.fun/d/workout?appcode=butt&amp;category=whatsnew</string>
 </resources>

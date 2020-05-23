@@ -7,6 +7,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ansoft.bfit.DataModel.WorkoutDay;
@@ -27,6 +28,7 @@ public class WorkoutMoreActivity extends AppCompatActivity {
     AppCompatImageView backIcon;
 
     AnimationDrawable animationDrawable;
+    RelativeLayout loadingLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,9 @@ public class WorkoutMoreActivity extends AppCompatActivity {
         imgGIf = findViewById(R.id.imgGIf);
         icLeft = findViewById(R.id.leftIcon);
         icRight = findViewById(R.id.rightIcon);
+        loadingLayout=findViewById(R.id.loadingLayout);
+        loadingLayout.setVisibility(View.GONE);
+
 
         loadCurrentWorkout();
 

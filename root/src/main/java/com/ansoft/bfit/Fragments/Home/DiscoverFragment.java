@@ -67,7 +67,7 @@ public class DiscoverFragment extends Fragment {
         loadingProgressBar.setVisibility(View.VISIBLE);
         discoverRecyclerView.setVisibility(View.GONE);
         discoverArrayList = new ArrayList<>();
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, AppConstants.DISCOVER_APP_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, getString(R.string.discover_url),
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ansoft.bfit.Adapter.WorkoutAdapter;
@@ -39,6 +40,8 @@ public class DayActivity extends AppCompatActivity {
     Button startBtn;
 
     MaterialFavoriteButton favoriteButton;
+
+    RelativeLayout loadingLayout;
 
 
     @Override
@@ -88,6 +91,8 @@ public class DayActivity extends AppCompatActivity {
             }
         });
         PushDownAnim.setPushDownAnimTo(startBtn);
+        loadingLayout=findViewById(R.id.loadingLayout);
+        loadingLayout.setVisibility(View.GONE);
 
     }
 

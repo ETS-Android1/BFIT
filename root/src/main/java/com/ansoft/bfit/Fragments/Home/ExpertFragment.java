@@ -62,7 +62,7 @@ public class ExpertFragment extends Fragment {
         loadingProgressBar.setVisibility(View.VISIBLE);
         expertRecyclerView.setVisibility(View.GONE);
         expertArrayList = new ArrayList<>();
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, AppConstants.EXPERT_APP_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, getString(R.string.expert_url),
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
