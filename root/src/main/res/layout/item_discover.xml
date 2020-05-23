@@ -11,12 +11,10 @@
         android:id="@+id/challenge1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1"
-        android:elevation="7dp">
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_weight="1">
 
         <com.ansoft.bfit.Util.SquareRelativeLayout
             android:id="@+id/imgThumbnail"
@@ -25,8 +23,8 @@
 
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/imgDisThumb"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/lvl_hard"

@@ -34,13 +34,10 @@ public class DayActivity extends AppCompatActivity {
     ArrayList<Workout> workoutArrayList;
     ArrayList<WorkoutDay> workoutData;
     WorkoutAdapter workoutAdapter;
-
     ImageView backIcon;
     TextView tvTitle;
     Button startBtn;
-
     MaterialFavoriteButton favoriteButton;
-
     RelativeLayout loadingLayout;
 
 
