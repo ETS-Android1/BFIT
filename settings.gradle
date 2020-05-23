@@ -1,1 +1,1 @@
-include ':root', ':sample'
+include ':root'

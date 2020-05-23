@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Butt Workout</string>
-    <string name="discover_url">https://api.bfit.remo.fun/d/workout?appcode=butt&amp;category=discover</string>
-    <string name="expert_url">https://api.bfit.remo.fun/d/expert</string>
-    <string name="workout_url">https://api.bfit.remo.fun/d/workout/</string>
-    <string name="whatsnew_url">https://api.bfit.remo.fun/d/workout?appcode=butt&amp;category=whatsnew</string>
-</resources>
