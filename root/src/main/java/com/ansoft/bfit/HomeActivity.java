@@ -51,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 if (id == R.id.nav_home) {
-                    tvTitle.setText("Butt Workout");
+                    tvTitle.setText(getString(R.string.app_name));
                 } else if (id == R.id.nav_disover) {
                     tvTitle.setText("Discover");
                 } else if (id == R.id.nav_whatsnew) {
