@@ -352,7 +352,7 @@ public class SettingsFragment extends Fragment {
         }
         tvCountDown.setText(SPDataManager.getCountDown(getActivity()) + " Sec");
         tvRestTime.setText(SPDataManager.getRestTime(getActivity()) + " Sec");
-        if (SPDataManager.getGender(getActivity()) == 0) {
+        if (SPDataManager.getGender(getActivity()) == 1) {
             tvGender.setText("Male");
         } else {
             tvGender.setText("Female");

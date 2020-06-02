@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ansoft.bfit.DataModel.WorkoutDay;
+import com.ansoft.bfit.Database.SPDataManager;
 import com.ansoft.bfit.Database.WorkoutID;
 import com.ansoft.bfit.DiscoverWorkoutActivity;
 import com.ansoft.bfit.R;
@@ -94,14 +95,14 @@ public class RestFragment extends Fragment {
 
         tvNextWorkoutRep.setText(rep);
         handler = new Handler();
-        endTime = SystemClock.uptimeMillis() + 30000;
+        endTime = SystemClock.uptimeMillis() + SPDataManager.getRestTime(getActivity()) * 1000;
         handler.postDelayed(runnable, 0);
         addTimeBtn = view.findViewById(R.id.addTimeBtn);
         skipBtn = view.findViewById(R.id.skipBtn);
         addTimeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                endTime += 30000;
+                endTime += 30 * 1000;
                 Toast.makeText(getContext(), "30 seconds added to rest", Toast.LENGTH_SHORT).show();
             }
         });

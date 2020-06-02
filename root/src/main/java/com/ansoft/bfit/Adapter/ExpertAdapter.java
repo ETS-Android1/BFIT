@@ -77,6 +77,12 @@ public class ExpertAdapter extends RecyclerView.Adapter<ExpertAdapter.MyViewHold
                 context.startActivity(intent);
             }
         });
+        if(expert.getWebsite().equalsIgnoreCase("null")){
+            viewHolder.linkWeb.setVisibility(View.GONE);
+        }
+        if(expert.getPhone().equalsIgnoreCase("null")){
+            viewHolder.linkPhone.setVisibility(View.GONE);
+        }
     }
 
     @Override

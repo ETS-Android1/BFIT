@@ -239,4 +239,8 @@ Start in the low-plank position on your elbows. Engage the core to create a stra
     <string name="expert_url">https://api.bfit.remo.fun/d/expert</string>
     <string name="workout_url">https://api.bfit.remo.fun/d/workout/</string>
     <string name="whatsnew_url">https://api.bfit.remo.fun/d/workout?appcode=butt&amp;category=whatsnew</string>
+
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

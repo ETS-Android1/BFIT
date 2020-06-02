@@ -25,6 +25,7 @@ import android.widget.TextView;
 
 import com.ansoft.bfit.DataModel.ReportData;
 import com.ansoft.bfit.DataModel.WorkoutDay;
+import com.ansoft.bfit.Database.SPDataManager;
 import com.ansoft.bfit.Database.WorkoutID;
 import com.ansoft.bfit.DiscoverActivity;
 import com.ansoft.bfit.DiscoverWorkoutActivity;
@@ -73,7 +74,7 @@ public class WorkoutFragment extends Fragment {
     long MillisecondTime, StartTime, TimeBuff, UpdateTime = 0L;
     Handler handler;
 
-    int countDown = 5;
+    int countDown;
 
     AppCompatImageView backIcon;
     Runnable countDownrunnable;
@@ -85,7 +86,6 @@ public class WorkoutFragment extends Fragment {
     AnimationDrawable animationDrawable;
 
     TextToSpeech t1;
-    SharedPreferences sharedPreferences;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -98,9 +98,7 @@ public class WorkoutFragment extends Fragment {
         backIcon = view.findViewById(R.id.backIcon);
         workoutProgressBar = view.findViewById(R.id.workoutProgressBar);
         workoutProgressBar.setProgress(progress);
-
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-
+        countDown= SPDataManager.getCountDown(getActivity());
         t1 = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -228,7 +226,7 @@ public class WorkoutFragment extends Fragment {
                     YoYo.with(Techniques.Tada)
                             .duration(1000)
                             .playOn(tvCountDownTimer);
-                    if (sharedPreferences.getBoolean("sound", false)) {
+                    if (SPDataManager.getSound(getActivity())==1) {
                         try {
                             MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.td_countdown);
                             mp.start();
@@ -240,7 +238,7 @@ public class WorkoutFragment extends Fragment {
                 } else {
 
 
-                    if (sharedPreferences.getBoolean("sound", false)) {
+                    if (SPDataManager.getSound(getActivity())==1) {
                         try {
                             MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.td_whistle);
                             mp.start();
@@ -259,7 +257,7 @@ public class WorkoutFragment extends Fragment {
                             .playOn(doneBtn);
 
 
-                    if (sharedPreferences.getBoolean("voice_over", false)) {
+                    if (SPDataManager.getVoice(getActivity())==1) {
                         int s = WorkoutID.getWorkoutFromID(workoutDay.getWorkoutid()).getDescription();
                         HashMap<String, String> myHashAlarm = new HashMap();
                         myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM,
