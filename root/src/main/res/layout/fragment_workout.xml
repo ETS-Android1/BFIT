@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MainActivity">
+    android:background="#FFFFFF">
 
 
     <ImageView
@@ -37,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/backIcon"
         android:layout_margin="20dp"
-        android:scaleType="centerCrop"
+        android:background="@color/lightlightgrey"
         android:src="@drawable/lvl_hard" />
 
 

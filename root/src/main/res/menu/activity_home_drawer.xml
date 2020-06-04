@@ -8,6 +8,7 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black"
             android:title="@string/menu_home" />
+
         <item
             android:id="@+id/nav_disover"
             android:icon="@drawable/ic_search_black_24dp"
@@ -22,7 +23,6 @@
             android:id="@+id/nav_report"
             android:icon="@drawable/ic_report"
             android:title="Report" />
-
 
         <item
             android:id="@+id/nav_fitness_expert"
