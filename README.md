@@ -16,3 +16,5 @@ And then
     dependencies {
 	    implementation 'com.github.abinashnp:BFIT:1.1.1'
     }
+
+[![](https://jitpack.io/v/abinashnp/BFIT.svg)](https://jitpack.io/#abinashnp/BFIT)
